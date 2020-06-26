@@ -22,5 +22,12 @@ public class CelloTest {
         assertEquals("Yamaha", cello.getName());
     }
 
+    @Test
+    public void hasMaterialType(){
+        assertEquals(MaterialType.WILLOW, cello.getMaterialType());
+    }
+
+
+
 
 }
