@@ -56,4 +56,9 @@ public class ViolinTest {
     public void hasStringType(){
         assertEquals(StringType.GUT, violin.getStringType());
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(1000000, violin.calculateMarkup(), 0.01);
+    }
 }

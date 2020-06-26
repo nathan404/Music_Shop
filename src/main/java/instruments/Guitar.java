@@ -30,4 +30,8 @@ public class Guitar extends StringInstrument {
     public GuitarStringType getGuitarStringType() {
         return guitarStringType;
     }
+
+    public double calculateMarkup(){
+        return getSellingPrice() - getBuyingPrice();
+    }
 }

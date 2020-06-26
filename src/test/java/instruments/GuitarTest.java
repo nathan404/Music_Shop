@@ -57,4 +57,9 @@ public class GuitarTest {
     public void hasGuitarStringType(){
         assertEquals(GuitarStringType.STEEL_NICKEL, guitar.getGuitarStringType());
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(500, guitar.calculateMarkup(), 0.01);
+    }
 }

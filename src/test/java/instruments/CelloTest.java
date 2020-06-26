@@ -57,5 +57,9 @@ public class CelloTest {
         assertEquals(StringType.GUT, cello.getStringType());
     }
 
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(400, cello.calculateMarkup(), 0.01);
+    }
 
 }
