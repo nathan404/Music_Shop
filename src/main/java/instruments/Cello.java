@@ -1,4 +1,4 @@
 package instruments;
 
-public class Cello {
+public class Cello extends StringInstrument {
 }

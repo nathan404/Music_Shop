@@ -1,4 +1,4 @@
 package instruments;
 
-public class StringInstrument {
+public abstract class StringInstrument extends Instrument{
 }
