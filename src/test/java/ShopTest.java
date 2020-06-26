@@ -1,5 +1,6 @@
 import accessories.Bow;
 import accessories.SheetMusic;
+import accessories.StringPack;
 import behaviours.ISell;
 import enums.*;
 import instruments.Cello;
@@ -77,4 +78,18 @@ public class ShopTest {
         assertEquals(4, shop.getStockCount());
     }
 
+    @Test
+    public void canSellInstrument(){
+        shop.sellInstrument(guitar);
+        assertEquals(4, shop.getStockCount());
+        assertEquals(22000, shop.getTill());
+    }
+
+    @Test
+    public void canAddAccessoryToStock(){
+        StringPack stringPack = new StringPack("Intermediate Strings", 200, 400, violin);
+        shop.addAccessoryToStock(stringPack);
+        assertEquals(6, shop.getStockCount());
+        assertEquals(19800, shop.getTill());
+    }
 }

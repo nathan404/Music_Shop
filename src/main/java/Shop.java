@@ -45,7 +45,14 @@ public class Shop {
         removeFromTill(instrument.getBuyingPrice());
     }
 
+    public void
+
     public void removeFromStock(ISell item){
         stock.remove(item);
+    }
+
+    public void sellInstrument(Instrument instrument){
+        addToTill(instrument.getSellingPrice());
+        removeFromStock(instrument);
     }
 }
