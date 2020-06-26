@@ -9,8 +9,8 @@ public class Cello extends StringInstrument {
     private CelloType celloType;
     private StringType stringType;
 
-    public Cello(String name, MaterialType materialType, int buyingPrice, int sellingPrice, int numberOfStrings, boolean bow, CelloType celloType, StringType stringType) {
-        super(name, materialType, buyingPrice, sellingPrice, numberOfStrings, bow);
+    public Cello(String name, MaterialType materialType, int buyingPrice, int sellingPrice, boolean bow, CelloType celloType, StringType stringType) {
+        super(name, materialType, buyingPrice, sellingPrice, bow);
         this.celloType = celloType;
         this.stringType = stringType;
     }

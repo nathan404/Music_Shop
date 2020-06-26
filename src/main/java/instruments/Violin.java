@@ -9,8 +9,8 @@ public class Violin extends StringInstrument{
     private ViolinType violinType;
     private StringType stringType;
 
-    public Violin(String name, MaterialType materialType, int buyingPrice, int sellingPrice, int numberOfStrings, boolean bow, ViolinType violinType, StringType stringType) {
-        super(name, materialType, buyingPrice, sellingPrice, numberOfStrings, bow);
+    public Violin(String name, MaterialType materialType, int buyingPrice, int sellingPrice, boolean bow, ViolinType violinType, StringType stringType) {
+        super(name, materialType, buyingPrice, sellingPrice, bow);
         this.violinType = violinType;
         this.stringType = stringType;
     }

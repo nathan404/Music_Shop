@@ -14,7 +14,7 @@ public class ViolinTest {
 
     @Before
     public void before(){
-        violin = new Violin("Stradivarius", MaterialType.SPRUCE, 1000000, 2000000, 4, true, ViolinType.CLASSICAL, StringType.GUT);
+        violin = new Violin("Stradivarius", MaterialType.SPRUCE, 1000000, 2000000, true, ViolinType.CLASSICAL, StringType.GUT);
     }
 
     @Test
@@ -48,7 +48,7 @@ public class ViolinTest {
     }
 
     @Test
-    public void hasCelloType(){
+    public void hasViolinType(){
         assertEquals(ViolinType.CLASSICAL, violin.getViolinType());
     }
 

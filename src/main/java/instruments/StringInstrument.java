@@ -7,13 +7,15 @@ public abstract class StringInstrument extends Instrument{
     private int numberOfStrings;
     private boolean bow;
 
-    public StringInstrument(String name, MaterialType materialType, int buyingPrice, int sellingPrice, int numberOfStrings, boolean bow) {
+    public StringInstrument(String name, MaterialType materialType, int buyingPrice, int sellingPrice, boolean bow) {
         super(name, materialType, buyingPrice, sellingPrice);
-        this.numberOfStrings = numberOfStrings;
+        this.numberOfStrings = 0;
         this.bow = bow;
     }
 
-    public abstract int getNumberOfStrings();
+    public int getNumberOfStrings(){
+        return this.numberOfStrings;
+    }
 
     public boolean hasBow() {
         return bow;
