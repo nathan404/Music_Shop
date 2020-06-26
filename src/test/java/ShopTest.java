@@ -70,4 +70,10 @@ public class ShopTest {
         assertEquals(21000, shop.getTill());
     }
 
+    @Test
+    public void canRemoveFromTill(){
+        shop.removeFromTill(1000);
+        assertEquals(19000, shop.getTill());
+    }
+
 }
