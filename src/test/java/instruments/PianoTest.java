@@ -46,5 +46,9 @@ public class PianoTest {
         assertEquals(88, piano.getNumberOfKeys());
     }
 
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(2000, piano.calculateMarkup(), 0.01);
+    }
 
 }
