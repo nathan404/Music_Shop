@@ -1,2 +1,33 @@
+import behaviours.ISell;
+
+import java.util.ArrayList;
+
 public class Shop {
+
+    private String name;
+    private int till;
+    private ArrayList<ISell> stock;
+
+
+    public Shop(String name, int till, ArrayList<ISell> stock) {
+        this.name = name;
+        this.till = till;
+        this.stock = stock;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getTill() {
+        return till;
+    }
+
+    public ArrayList<ISell> getStock() {
+        return stock;
+    }
+
+    public int getStockCount(){
+        return getStock().size();
+    }
 }
