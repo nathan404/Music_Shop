@@ -40,6 +40,11 @@ public class SheetMusicTest {
     }
 
     @Test
+    public void hasNumberOfPages(){
+        assertEquals(5, sheetMusic.getNumberOfPages());
+    }
+
+    @Test
     public void hasInstrument(){
         assertEquals(piano, sheetMusic.getInstrument());
     }
