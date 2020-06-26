@@ -1,5 +1,6 @@
 package instruments;
 
+import enums.CelloType;
 import enums.MaterialType;
 import enums.StringType;
 import org.junit.Before;
@@ -13,7 +14,7 @@ public class CelloTest {
 
     @Before
     public void before(){
-        cello = new Cello("Yamaha", MaterialType.WOOD, 800, 1200, 4, true, StringType.GUT);
+        cello = new Cello("Yamaha", MaterialType.WOOD, 800, 1200, 4, true, CelloType.PERFORMER, StringType.GUT);
     }
 
     @Test
