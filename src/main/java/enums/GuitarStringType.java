@@ -1,4 +1,7 @@
 package enums;
 
-public class GuitarStringType {
+public enum GuitarStringType {
+    BRASS_BRONZE,
+    STEEL_NICKEL,
+    NYLON
 }
