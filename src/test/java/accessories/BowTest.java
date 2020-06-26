@@ -11,11 +11,12 @@ import static org.junit.Assert.assertEquals;
 
 public class BowTest {
 
+    private Violin violin;
     private Bow bow;
 
     @Before
     public void before(){
-        Violin violin = new Violin("Stradivarius", MaterialType.SPRUCE, 1000000, 2000000, ViolinType.CLASSICAL, StringType.GUT);
+        violin = new Violin("Stradivarius", MaterialType.SPRUCE, 1000000, 2000000, ViolinType.CLASSICAL, StringType.GUT);
         bow = new Bow("Beginner's Bow", 300, 500, violin);
     }
 

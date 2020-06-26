@@ -1,4 +1,4 @@
 package accessories;
 
-public class StringPack extends Accessory {
-}
+//public class StringPack extends Accessory {
+//}
