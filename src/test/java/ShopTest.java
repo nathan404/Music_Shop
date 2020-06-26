@@ -102,6 +102,6 @@ public class ShopTest {
 
     @Test
     public void canCalculatePotentialProfit(){
-        assertEquals(5704, shop.calculatePotentialProfit());
+        assertEquals(4704, shop.calculatePotentialProfit());
     }
 }

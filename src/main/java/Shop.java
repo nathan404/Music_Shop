@@ -68,9 +68,12 @@ public class Shop {
 //    public void sellItem(ISell item){
 //    }
 
-//    int total = 0;
-//        for (ISell item : shop.getStock()){
-//        total += item.calculateMarkup();
-//    }
-//        return total;
+    public int calculatePotentialProfit(){
+        int total = 0;
+        for (ISell item : getStock()){
+            total += item.calculateMarkup();
+        }
+        return total;
+    }
+
 }
