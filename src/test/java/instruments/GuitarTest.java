@@ -74,4 +74,9 @@ public class GuitarTest {
     public void canPlay(){
         assertEquals("Dangdangdang", guitar.play());
     }
+
+    @Test
+    public void hasNumberOfFrets(){
+        assertEquals(24, guitar.getNumberOfFrets());
+    }
 }
