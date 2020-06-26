@@ -3,7 +3,7 @@ package accessories;
 import behaviours.ISell;
 import instruments.StringInstrument;
 
-public class Bow extends Accessory implements ISell {
+public class Bow extends Accessory{
 
     private StringInstrument stringInstrument;
 
@@ -16,7 +16,4 @@ public class Bow extends Accessory implements ISell {
         return stringInstrument;
     }
 
-    public double calculateMarkup(){
-        return getSellingPrice() - getBuyingPrice();
-    }
 }

@@ -31,7 +31,4 @@ public class Violin extends StringInstrument{
         return stringType;
     }
 
-    public double calculateMarkup(){
-        return getSellingPrice() - getBuyingPrice();
-    }
 }

@@ -1,8 +1,9 @@
 package instruments;
 
+import behaviours.ISell;
 import enums.MaterialType;
 
-public abstract class Instrument {
+public abstract class Instrument implements ISell {
 
     private String name;
     private MaterialType materialType;
@@ -34,5 +35,9 @@ public abstract class Instrument {
 
     public void setSellingPrice(int sellingPrice) {
         this.sellingPrice = sellingPrice;
+    }
+
+    public double calculateMarkup(){
+        return getSellingPrice() - getBuyingPrice();
     }
 }

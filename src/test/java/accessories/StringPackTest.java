@@ -39,4 +39,9 @@ public class StringPackTest {
     public void hasStringInstrument(){
         assertEquals(violin, stringPack.getStringInstrument());
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(200, stringPack.calculateMarkup(), 0.01);
+    }
 }

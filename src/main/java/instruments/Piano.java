@@ -4,7 +4,7 @@ import behaviours.ISell;
 import enums.MaterialType;
 import enums.PianoType;
 
-public class Piano extends Instrument implements ISell {
+public class Piano extends Instrument{
 
     private PianoType pianoType;
     private int numberOfKeys;
@@ -23,7 +23,4 @@ public class Piano extends Instrument implements ISell {
         return numberOfKeys;
     }
 
-    public double calculateMarkup(){
-        return getSellingPrice() - getBuyingPrice();
-    }
 }

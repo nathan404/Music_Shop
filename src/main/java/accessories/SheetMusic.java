@@ -26,4 +26,5 @@ public class SheetMusic extends Accessory {
     public Instrument getInstrument() {
         return instrument;
     }
+
 }

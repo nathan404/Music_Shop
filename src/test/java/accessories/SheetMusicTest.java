@@ -48,4 +48,9 @@ public class SheetMusicTest {
     public void hasInstrument(){
         assertEquals(piano, sheetMusic.getInstrument());
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(4, sheetMusic.calculateMarkup(), 0.01);
+    }
 }

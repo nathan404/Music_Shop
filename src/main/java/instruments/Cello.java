@@ -30,8 +30,4 @@ public class Cello extends StringInstrument {
     public StringType getStringType() {
         return stringType;
     }
-
-    public double calculateMarkup(){
-        return getSellingPrice() - getBuyingPrice();
-    }
 }
