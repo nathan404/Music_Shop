@@ -1,4 +1,4 @@
 package accessories;
 
-public class Accessory {
+public abstract class Accessory {
 }

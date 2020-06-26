@@ -1,4 +1,4 @@
 package accessories;
 
-public class SheetMusic {
+public class SheetMusic extends Accessory {
 }

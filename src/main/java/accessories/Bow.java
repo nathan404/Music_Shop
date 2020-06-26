@@ -1,4 +1,4 @@
 package accessories;
 
-public class Bow {
+public class Bow extends Accessory {
 }
