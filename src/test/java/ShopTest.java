@@ -2,6 +2,7 @@ import accessories.Bow;
 import accessories.SheetMusic;
 import behaviours.ISell;
 import enums.*;
+import instruments.Cello;
 import instruments.Guitar;
 import instruments.Piano;
 import instruments.Violin;
@@ -48,6 +49,13 @@ public class ShopTest {
     @Test
     public void hasStock(){
         assertEquals(5, shop.getStockCount());
+    }
+
+    @Test
+    public void canAddToStock(){
+        Cello cello = new Cello("Yamaha", MaterialType.WILLOW, 800, 1200, CelloType.PERFORMER, StringType.GUT);
+        shop.addToStock(cello);
+        assertEquals(6, shop.getStockCount());
     }
 
 }
