@@ -39,4 +39,8 @@ public class Shop {
     public void removeFromStock(ISell item){
         stock.remove(item);
     }
+
+    public void addToTill(int amount){
+        till += amount;
+    }
 }
