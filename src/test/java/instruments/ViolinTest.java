@@ -68,4 +68,9 @@ public class ViolinTest {
         assertEquals(3000000, violin.getSellingPrice());
         assertEquals(2000000, violin.calculateMarkup(), 0.01);
     }
+
+    @Test
+    public void canPlay(){
+        assertEquals("Deedeedee", violin.play());
+    }
 }

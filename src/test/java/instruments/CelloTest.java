@@ -69,4 +69,9 @@ public class CelloTest {
         assertEquals(700, cello.calculateMarkup(), 0.01);
     }
 
+    @Test
+    public void canPlay(){
+        assertEquals("Bumbumbum", cello.play());
+    }
+
 }

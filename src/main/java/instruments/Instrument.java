@@ -40,4 +40,6 @@ public abstract class Instrument implements ISell {
     public double calculateMarkup(){
         return getSellingPrice() - getBuyingPrice();
     }
+
+    public abstract String play();
 }

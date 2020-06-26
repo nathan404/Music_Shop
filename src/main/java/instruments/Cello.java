@@ -30,4 +30,8 @@ public class Cello extends StringInstrument {
     public StringType getStringType() {
         return stringType;
     }
+
+    public String play(){
+        return "Bumbumbum";
+    }
 }

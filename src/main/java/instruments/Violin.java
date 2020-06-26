@@ -31,4 +31,7 @@ public class Violin extends StringInstrument{
         return stringType;
     }
 
+    public String play(){
+        return "Deedeedee";
+    }
 }

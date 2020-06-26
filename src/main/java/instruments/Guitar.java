@@ -31,4 +31,8 @@ public class Guitar extends StringInstrument {
         return guitarStringType;
     }
 
+    public String play(){
+        return "Dangdangdang";
+    }
+
 }
