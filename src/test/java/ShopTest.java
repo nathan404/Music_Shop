@@ -92,4 +92,11 @@ public class ShopTest {
         assertEquals(6, shop.getStockCount());
         assertEquals(19800, shop.getTill());
     }
+
+    @Test
+    public void canSellAccessory(){
+        shop.sellAccessory(bow);
+        assertEquals(4, shop.getStockCount());
+        assertEquals(20500, shop.getTill());
+    }
 }

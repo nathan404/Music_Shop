@@ -1,3 +1,4 @@
+import accessories.Accessory;
 import behaviours.ISell;
 import instruments.Instrument;
 
@@ -45,7 +46,10 @@ public class Shop {
         removeFromTill(instrument.getBuyingPrice());
     }
 
-    public void
+    public void addAccessoryToStock(Accessory accessory){
+        stock.add(accessory);
+        removeFromTill(accessory.getBuyingPrice());
+    }
 
     public void removeFromStock(ISell item){
         stock.remove(item);
