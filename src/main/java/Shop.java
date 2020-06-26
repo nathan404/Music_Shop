@@ -32,19 +32,20 @@ public class Shop {
         return getStock().size();
     }
 
-    public void addToStock(ISell item){
-        stock.add(item);
-    }
-
-    public void removeFromStock(ISell item){
-        stock.remove(item);
-    }
-
     public void addToTill(int amount){
         till += amount;
     }
 
     public void removeFromTill(int amount){
         till -= amount;
+    }
+
+    public void addInstrumentToStock(Instrument instrument){
+        stock.add(instrument);
+        removeFromTill(instrument.getBuyingPrice());
+    }
+
+    public void removeFromStock(ISell item){
+        stock.remove(item);
     }
 }

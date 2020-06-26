@@ -52,19 +52,6 @@ public class ShopTest {
     }
 
     @Test
-    public void canAddToStock(){
-        Cello cello = new Cello("Yamaha", MaterialType.WILLOW, 800, 1200, CelloType.PERFORMER, StringType.GUT);
-        shop.addToStock(cello);
-        assertEquals(6, shop.getStockCount());
-    }
-
-    @Test
-    public void canRemoveFromStock(){
-        shop.removeFromStock(violin);
-        assertEquals(4, shop.getStockCount());
-    }
-
-    @Test
     public void canAddToTill(){
         shop.addToTill(1000);
         assertEquals(21000, shop.getTill());
@@ -74,6 +61,20 @@ public class ShopTest {
     public void canRemoveFromTill(){
         shop.removeFromTill(1000);
         assertEquals(19000, shop.getTill());
+    }
+
+    @Test
+    public void canAddInstrumentToStock(){
+        Cello cello = new Cello("Yamaha", MaterialType.WILLOW, 800, 1200, CelloType.PERFORMER, StringType.GUT);
+        shop.addInstrumentToStock(cello);
+        assertEquals(6, shop.getStockCount());
+        assertEquals(19200, shop.getTill());
+    }
+
+    @Test
+    public void canRemoveFromStock(){
+        shop.removeFromStock(violin);
+        assertEquals(4, shop.getStockCount());
     }
 
 }
