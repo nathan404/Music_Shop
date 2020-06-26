@@ -10,7 +10,6 @@ public abstract class StringInstrument extends Instrument{
     public StringInstrument(String name, MaterialType materialType, int buyingPrice, int sellingPrice) {
         super(name, materialType, buyingPrice, sellingPrice);
         this.numberOfStrings = 0;
-//        this.bow = true;
     }
 
     public int getNumberOfStrings(){

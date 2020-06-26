@@ -62,4 +62,11 @@ public class CelloTest {
         assertEquals(400, cello.calculateMarkup(), 0.01);
     }
 
+    @Test
+    public void canSetSellingPrice(){
+        cello.setSellingPrice(1500);
+        assertEquals(1500, cello.getSellingPrice());
+        assertEquals(700, cello.calculateMarkup(), 0.01);
+    }
+
 }
