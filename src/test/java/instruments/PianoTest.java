@@ -51,4 +51,11 @@ public class PianoTest {
         assertEquals(2000, piano.calculateMarkup(), 0.01);
     }
 
+    @Test
+    public void canSetSellingPrice(){
+        piano.setSellingPrice(8000);
+        assertEquals(8000, piano.getSellingPrice());
+        assertEquals(4000, piano.calculateMarkup(), 0.01);
+    }
+
 }

@@ -61,4 +61,11 @@ public class ViolinTest {
     public void canCalculateMarkup(){
         assertEquals(1000000, violin.calculateMarkup(), 0.01);
     }
+
+    @Test
+    public void canSetSellingPrice(){
+        violin.setSellingPrice(3000000);
+        assertEquals(3000000, violin.getSellingPrice());
+        assertEquals(2000000, violin.calculateMarkup(), 0.01);
+    }
 }
