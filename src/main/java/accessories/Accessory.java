@@ -26,6 +26,10 @@ public abstract class Accessory implements ISell {
         return sellingPrice;
     }
 
+    public void setSellingPrice(int sellingPrice) {
+        this.sellingPrice = sellingPrice;
+    }
+
     public double calculateMarkup(){
         return getSellingPrice() - getBuyingPrice();
     }

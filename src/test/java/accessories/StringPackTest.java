@@ -44,4 +44,11 @@ public class StringPackTest {
     public void canCalculateMarkup(){
         assertEquals(200, stringPack.calculateMarkup(), 0.01);
     }
+
+    @Test
+    public void canSetSellingPrice(){
+        stringPack.setSellingPrice(500);
+        assertEquals(500, stringPack.getSellingPrice());
+        assertEquals(300, stringPack.calculateMarkup(), 0.01);
+    }
 }

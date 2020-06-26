@@ -44,4 +44,11 @@ public class BowTest {
     public void canCalculateMarkup(){
         assertEquals(200, bow.calculateMarkup(), 0.01);
     }
+
+    @Test
+    public void canSetSellingPrice(){
+        bow.setSellingPrice(600);
+        assertEquals(600, bow.getSellingPrice());
+        assertEquals(300, bow.calculateMarkup(), 0.01);
+    }
 }
