@@ -65,4 +65,12 @@ public class Shop {
         removeFromStock(accessory);
     }
 
+//    public void sellItem(ISell item){
+//    }
+
+//    int total = 0;
+//        for (ISell item : shop.getStock()){
+//        total += item.calculateMarkup();
+//    }
+//        return total;
 }

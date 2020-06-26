@@ -99,4 +99,9 @@ public class ShopTest {
         assertEquals(4, shop.getStockCount());
         assertEquals(20500, shop.getTill());
     }
+
+    @Test
+    public void canCalculatePotentialProfit(){
+        assertEquals(5704, shop.calculatePotentialProfit());
+    }
 }
