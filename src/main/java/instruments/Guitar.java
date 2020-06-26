@@ -9,14 +9,18 @@ public class Guitar extends StringInstrument {
     private GuitarType guitarType;
     private GuitarStringType guitarStringType;
 
-    public Guitar(String name, MaterialType materialType, int buyingPrice, int sellingPrice, boolean bow, GuitarType guitarType, GuitarStringType guitarStringType) {
-        super(name, materialType, buyingPrice, sellingPrice, bow);
+    public Guitar(String name, MaterialType materialType, int buyingPrice, int sellingPrice, GuitarType guitarType, GuitarStringType guitarStringType) {
+        super(name, materialType, buyingPrice, sellingPrice);
         this.guitarType = guitarType;
         this.guitarStringType = guitarStringType;
     }
 
     public int getNumberOfStrings(){
         return 6;
+    }
+
+    public boolean hasBow(){
+        return false;
     }
 
     public GuitarType getGuitarType() {

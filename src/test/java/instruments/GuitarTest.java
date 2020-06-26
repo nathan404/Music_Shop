@@ -15,7 +15,7 @@ public class GuitarTest {
 
     @Before
     public void before(){
-        guitar = new Guitar("Gibson Les Paul", MaterialType.MAHOGANY, 1500, 2000, false, GuitarType.ELECTRIC, GuitarStringType.STEEL_NICKEL);
+        guitar = new Guitar("Gibson Les Paul", MaterialType.MAHOGANY, 1500, 2000, GuitarType.ELECTRIC, GuitarStringType.STEEL_NICKEL);
     }
 
     @Test
