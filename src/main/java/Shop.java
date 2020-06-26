@@ -29,34 +29,40 @@ public class Shop {
         return stock;
     }
 
-    public int getStockCount(){
+    public int getStockCount() {
         return getStock().size();
     }
 
-    public void addToTill(int amount){
+    public void addToTill(int amount) {
         till += amount;
     }
 
-    public void removeFromTill(int amount){
+    public void removeFromTill(int amount) {
         till -= amount;
     }
 
-    public void addInstrumentToStock(Instrument instrument){
+    public void addInstrumentToStock(Instrument instrument) {
         stock.add(instrument);
         removeFromTill(instrument.getBuyingPrice());
     }
 
-    public void addAccessoryToStock(Accessory accessory){
+    public void addAccessoryToStock(Accessory accessory) {
         stock.add(accessory);
         removeFromTill(accessory.getBuyingPrice());
     }
 
-    public void removeFromStock(ISell item){
+    public void removeFromStock(ISell item) {
         stock.remove(item);
     }
 
-    public void sellInstrument(Instrument instrument){
+    public void sellInstrument(Instrument instrument) {
         addToTill(instrument.getSellingPrice());
         removeFromStock(instrument);
     }
+
+    public void sellAccessory(Accessory accessory) {
+        addToTill(accessory.getSellingPrice());
+        removeFromStock(accessory);
+    }
+
 }
