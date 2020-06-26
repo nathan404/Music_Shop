@@ -1,7 +1,13 @@
 package enums;
 
 public enum MaterialType {
-    WOOD,
+    SPRUCE,
+    WILLOW,
+    MAHOGANY,
+    ASH,
+    BEECH,
+    LIME,
+    PINE,
     CARBONFIBER,
     ALUMINIUM
 }

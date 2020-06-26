@@ -14,7 +14,7 @@ public class CelloTest {
 
     @Before
     public void before(){
-        cello = new Cello("Yamaha", MaterialType.WOOD, 800, 1200, 4, true, CelloType.PERFORMER, StringType.GUT);
+        cello = new Cello("Yamaha", MaterialType.WILLOW, 800, 1200, 4, true, CelloType.PERFORMER, StringType.GUT);
     }
 
     @Test
