@@ -64,4 +64,10 @@ public class ShopTest {
         assertEquals(4, shop.getStockCount());
     }
 
+    @Test
+    public void canAddToTill(){
+        shop.addToTill(1000);
+        assertEquals(21000, shop.getTill());
+    }
+
 }
