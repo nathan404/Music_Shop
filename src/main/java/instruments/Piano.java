@@ -1,4 +1,4 @@
 package instruments;
 
-public class Piano extends Instrument{
-}
+//public class Piano extends Instrument{
+//}

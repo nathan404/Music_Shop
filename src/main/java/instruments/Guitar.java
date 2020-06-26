@@ -1,4 +1,4 @@
 package instruments;
 
-public class Guitar extends StringInstrument {
-}
+//public class Guitar extends StringInstrument {
+//}
