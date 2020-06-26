@@ -15,6 +15,10 @@ public class Cello extends StringInstrument {
         this.stringType = stringType;
     }
 
+    public int getNumberOfStrings(){
+        return 4;
+    }
+
     public CelloType getCelloType() {
         return celloType;
     }

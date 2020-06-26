@@ -15,6 +15,10 @@ public class Violin extends StringInstrument{
         this.stringType = stringType;
     }
 
+    public int getNumberOfStrings(){
+        return 4;
+    }
+
     public ViolinType getViolinType() {
         return violinType;
     }

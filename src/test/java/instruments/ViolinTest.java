@@ -1,8 +1,8 @@
 package instruments;
 
-import enums.CelloType;
 import enums.MaterialType;
 import enums.StringType;
+import enums.ViolinType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,46 +14,46 @@ public class ViolinTest {
 
     @Before
     public void before(){
-        cello = new Cello("Yamaha", MaterialType.WILLOW, 800, 1200, 4, true, CelloType.PERFORMER, StringType.GUT);
+        violin = new Violin("Stradivarius", MaterialType.SPRUCE, 1000000, 2000000, 4, true, ViolinType.CLASSICAL, StringType.GUT);
     }
 
     @Test
     public void hasName(){
-        assertEquals("Yamaha", cello.getName());
+        assertEquals("Stradivarius", violin.getName());
     }
 
     @Test
     public void hasMaterialType(){
-        assertEquals(MaterialType.WILLOW, cello.getMaterialType());
+        assertEquals(MaterialType.SPRUCE, violin.getMaterialType());
     }
 
     @Test
     public void hasBuyingPrice(){
-        assertEquals(800, cello.getBuyingPrice());
+        assertEquals(1000000, violin.getBuyingPrice());
     }
 
     @Test
     public void hasSellingPrice(){
-        assertEquals(1200, cello.getSellingPrice());
+        assertEquals(2000000, violin.getSellingPrice());
     }
 
     @Test
     public void hasNumberOfStrings(){
-        assertEquals(4, cello.getNumberOfStrings());
+        assertEquals(4, violin.getNumberOfStrings());
     }
 
     @Test
     public void hasBow(){
-        assertEquals(true, cello.hasBow());
+        assertEquals(true, violin.hasBow());
     }
 
     @Test
     public void hasCelloType(){
-        assertEquals(CelloType.PERFORMER, cello.getCelloType());
+        assertEquals(ViolinType.CLASSICAL, violin.getViolinType());
     }
 
     @Test
     public void hasStringType(){
-        assertEquals(StringType.GUT, cello.getStringType());
+        assertEquals(StringType.GUT, violin.getStringType());
     }
 }

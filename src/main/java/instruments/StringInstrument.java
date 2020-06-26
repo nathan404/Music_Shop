@@ -13,9 +13,7 @@ public abstract class StringInstrument extends Instrument{
         this.bow = bow;
     }
 
-    public int getNumberOfStrings() {
-        return numberOfStrings;
-    }
+    public abstract int getNumberOfStrings();
 
     public boolean hasBow() {
         return bow;
