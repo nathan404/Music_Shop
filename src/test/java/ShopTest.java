@@ -58,4 +58,10 @@ public class ShopTest {
         assertEquals(6, shop.getStockCount());
     }
 
+    @Test
+    public void canRemoveFromStock(){
+        shop.removeFromStock(violin);
+        assertEquals(4, shop.getStockCount());
+    }
+
 }
