@@ -43,4 +43,8 @@ public class Shop {
     public void addToTill(int amount){
         till += amount;
     }
+
+    public void removeFromTill(int amount){
+        till -= amount;
+    }
 }
