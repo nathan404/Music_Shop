@@ -27,6 +27,38 @@ public class CelloTest {
         assertEquals(MaterialType.WILLOW, cello.getMaterialType());
     }
 
+    @Test
+    public void hasBuyingPrice(){
+        assertEquals(800, cello.getBuyingPrice());
+    }
+
+    @Test
+    public void hasSellingPrice(){
+        assertEquals(1200, cello.getSellingPrice());
+    }
+
+    @Test
+    public void hasNumberOfStrings(){
+        assertEquals(4, cello.getNumberOfStrings());
+    }
+
+    @Test
+    public void hasBow(){
+        assertEquals(true, cello.hasBow());
+    }
+
+    @Test
+    public void hasCelloType(){
+        assertEquals(CelloType.PERFORMER, cello.getCelloType());
+    }
+
+    @Test
+    public void hasStringType(){
+        assertEquals(StringType.GUT, cello.getStringType());
+    }
+
+
+
 
 
 
