@@ -39,4 +39,9 @@ public class BowTest {
     public void hasStringInstrument(){
         assertEquals(violin, bow.getStringInstrument());
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(200, bow.calculateMarkup(), 0.01);
+    }
 }

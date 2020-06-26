@@ -1,8 +1,9 @@
 package accessories;
 
+import behaviours.ISell;
 import instruments.StringInstrument;
 
-public class Bow extends Accessory {
+public class Bow extends Accessory implements ISell {
 
     private StringInstrument stringInstrument;
 
@@ -13,5 +14,9 @@ public class Bow extends Accessory {
 
     public StringInstrument getStringInstrument() {
         return stringInstrument;
+    }
+
+    public double calculateMarkup(){
+        return getSellingPrice() - getBuyingPrice();
     }
 }
