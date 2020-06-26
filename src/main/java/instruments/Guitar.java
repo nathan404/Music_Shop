@@ -35,4 +35,8 @@ public class Guitar extends StringInstrument {
         return "Dangdangdang";
     }
 
+    public int getNumberOfFrets(){
+        return this.guitarType.getFretNumber();
+    }
+
 }
