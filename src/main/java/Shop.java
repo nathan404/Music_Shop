@@ -1,4 +1,5 @@
 import behaviours.ISell;
+import instruments.Instrument;
 
 import java.util.ArrayList;
 
@@ -29,5 +30,9 @@ public class Shop {
 
     public int getStockCount(){
         return getStock().size();
+    }
+
+    public void addToStock(ISell item){
+        stock.add(item);
     }
 }
